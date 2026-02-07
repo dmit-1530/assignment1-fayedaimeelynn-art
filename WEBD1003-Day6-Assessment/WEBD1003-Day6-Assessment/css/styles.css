@@ -18,30 +18,53 @@
     margin: 0 auto;
 }
 
-.plans .flex-container{
+.flex-container{
     display: flex;
     flex-wrap: wrap;
 }
+
+section .team{
+width: calc((100% / 2)-(2rem / 2));
+display: flex;
+gap: 2rem;
+}
+
+.team img{
+    width: calc((100% / 2)-(2rem / 2));
+}
+
+.team .body-text{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;}
+
+.plans .flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    background-color: var(--Grey);
+}
+
+
 section .plans{
     width: calc: ((100% / 3) - ( 1rem / 3));
     display: flex;
+    flex-wrap:wrap;
     justify-content:center;
-    align-items:flex-end;
     gap: 2.06rem;
+    line-height: 1.5;
+    margin-bottom:1.5;
 }
 
 section .plan{
         background-color:var(--Grey);
     justify-content: center;
-    /* align-items:center; */
+    align-items:flex-start;
     align-content: center;
     padding: 1.75rem 5.7rem;
 }
-/* .plans .flex-container{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
+
 
 /* ***************** global typography ***************** */
 body{
