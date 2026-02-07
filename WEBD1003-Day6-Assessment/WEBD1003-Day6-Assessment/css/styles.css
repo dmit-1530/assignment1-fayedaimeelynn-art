@@ -1,6 +1,8 @@
 :root{
     --Grey: #F4F4F5;
-    
+    --Primary-blue: #0c4a6e;
+    --Off-white: #FAFAFA; 
+    --Black:#000000;
 }
 /* ***************** utilities & containers ***************** */
 
