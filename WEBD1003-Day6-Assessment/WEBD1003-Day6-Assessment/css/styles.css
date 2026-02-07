@@ -5,7 +5,9 @@
     --Black:#000000;
 }
 /* ***************** utilities & containers ***************** */
-
+.inner-container {
+    max-width: 1528px;
+}
 /* ***************** global typography ***************** */
 
 /* ***************** header & footer ***************** */
