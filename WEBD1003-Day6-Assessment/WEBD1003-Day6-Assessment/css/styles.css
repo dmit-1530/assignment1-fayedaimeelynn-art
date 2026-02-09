@@ -13,74 +13,15 @@
     --footer-p: 1rem;
 }
 
-/* ***************** utilities & containers ***************** */
-.inner-container {
-    max-width: 1528px;
-    margin: 0 auto;
-}
-
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.section teams .flex-container{
-    display: flex;
-    gap: 2rem;
-    margin: 2rem;
-}
-/* 
-section .teams {
-    width: calc ((100% / 2)-(1rem / 2));
-    display: flex;
-    gap: 2rem;
-} */
-
-/* .team img {
-   width: calc ((100% / 2) - (1rem / 2));
-} */
-
-/* .team .body-text {
-       width: calc ((100% / 2) - (1rem / 2));
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 2rem;
-    align-items: center;
-} */
-
-.plans .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    background-color: var(--Grey);
-    align-content:;
-}
-
-
-section .plans {
-    width: calc ((100% / 3) - (1rem / 3));
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2.06rem;
-    line-height: 1.5;
-    margin-bottom: 1.5rem;
-}
-
-section .plan {
-    background-color: var(--Grey);
-    justify-content: center;
-    align-items: flex-start;
-    align-content: center;
-    padding: 1.75rem 5.7rem;
-}
-
 
 /* ***************** global typography ***************** */
 body {
     font-family: var(--text-font-family);
 }
 
+h1 {
+    font-size: var(--h1);
+}
 
 h2 {
     font-size: var(--h2);
@@ -97,6 +38,14 @@ h4 {
 body {
     font-family: var(--text-font-family);
 
+}
+
+.teams h2 {
+    padding: 1.75rem 0 1.5rem 0;
+}
+
+.plans h2 {
+    padding: 6rem 0 1.5625rem 0;
 }
 
 .plans p {
@@ -137,7 +86,6 @@ cite {
 footer p,
 cite {
     justify-content: left;
-
     margin: 0;
     line-height: 1.5;
 }
@@ -155,4 +103,57 @@ body {
 
 main {
     background-color: var(--Off-white);
+}
+
+/* ***************** utilities & containers ***************** */
+.inner-container {
+    max-width: 1528px;
+    margin: 0 auto;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+
+.teams .flex-container .team {
+    width: calc((100% / 2) - (2rem / 2));
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    background-color: var(--Grey);
+    padding: 2.5rem 3.5rem 2.5rem 1.75rem;
+}
+
+.team img,
+.team .body-text {
+    width: calc((100% / 2) - (2rem / 2));
+    padding-right: 3.5rem;
+}
+
+
+
+.plans .flex-container {
+    display: flex;
+    gap: 2rem;
+    flex-direction: row;
+
+}
+
+
+.plans .flex-container .plan {
+    width: calc((100% / 3) - (4rem / 3));
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    background-color: var(--Grey);
+    justify-items: center;
+    padding: 1.75rem 5.69rem;
+}
+
+.plans .flex-container .features{
+    flex-direction: row;
+    justify-items: center;
 }
