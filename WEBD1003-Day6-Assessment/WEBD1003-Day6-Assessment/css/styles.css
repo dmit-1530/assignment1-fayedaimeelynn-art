@@ -111,7 +111,7 @@ main {
     margin: 0 auto;
 }
 
-
+/* used to flex continers for teams and service plans and wrap them if reached the width required they also have a gap of 2rems */
 .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -119,6 +119,7 @@ main {
 
 }
 
+/* team flex container is used to flex the team member cards to it's desiered width, gap and added the backgrond color as well as padding from the border of the edge of the card */
 .teams .flex-container .team {
     width: calc((100% / 2) - (2rem / 2));
     display: flex;
@@ -128,13 +129,17 @@ main {
     padding: 2.5rem 3.5rem 2.5rem 1.75rem;
 }
 
+/* adjust the max width of the body text and img for the teams card  */
 .team img,
 .team .body-text {
     width: calc((100% / 2) - (2rem / 2));
-    padding-right: 3.5rem;
 }
 
+.team .body-text{
+       padding-left: 3.5rem;
+}
 
+/* flexes plans boxes and into row instead of coloms */
 
 .plans .flex-container {
     display: flex;
@@ -143,7 +148,7 @@ main {
 
 }
 
-
+/* calculats the plans flex containers including the content within it, adds a line height for the text, a margni bottom to keep space from the bottom added background color grey, justify items to be center of the box a padding to ccreate space around the textlike shown in example */
 .plans .flex-container .plan {
     width: calc((100% / 3) - (4rem / 3));
     line-height: 1.5;
