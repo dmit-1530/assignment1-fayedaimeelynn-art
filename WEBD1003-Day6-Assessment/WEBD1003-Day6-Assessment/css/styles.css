@@ -1,5 +1,5 @@
 :root {
-    --Grey: #F4F4F5;
+    --Grey: #C3C3C4;
     --Primary-blue: #0c4a6e;
     --Off-white: #FAFAFA;
     --Black: #000000;
@@ -32,7 +32,7 @@ h3 {
 }
 
 h4 {
-    font-size: var(--service-plan-p);
+    font-size: var(--h4);
 }
 
 body {
@@ -69,7 +69,6 @@ header {
     margin: 1.6rem;
     padding: 1.6rem;
     justify-content: left;
-
     margin: 0;
     line-height: 1.5;
 }
@@ -145,17 +144,20 @@ main {
     display: flex;
     gap: 2rem;
     flex-direction: row;
-
 }
 
 /* calculats the plans flex containers including the content within it, adds a line height for the text, a margni bottom to keep space from the bottom added background color grey, justify items to be center of the box a padding to ccreate space around the textlike shown in example */
 .plans .flex-container .plan {
-    width: calc((100% / 3) - (4rem / 3));
+  display: flex;
+    flex-direction: column;
+    
+     width: calc((100% / 3) - (4rem / 3));
     line-height: 1.5;
     margin-bottom: 1.5rem;
     background-color: var(--Grey);
-    justify-items: center;
+    justify-content: space-between;
     padding: 1.75rem 5.69rem;
+    align-items: center;   
 }
 
 .plans .flex-container .features {
